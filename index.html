@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css"  type="text/css">
+    <link rel="stylesheet" href="./styles/main.css"  type="text/css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="bgcolor-1"></div>
+    <div class="bgcolor-2"></div>
+    <div id="app">
+        <form id="Calculator">
+            <!--display de la calculadora-->
+            <div class="display">
+                <input type="text" id="display"  readonly autocomplete="off"> 
+            </div>
+
+            <div class="btn-container">
+            
+            <input type="button" class="btn btn-operator" id="btn-delete" value="C">
+            <input type="button" class="btn btn-operator" value="&larr;" style="font-size: 35px;">
+            <!--Botones de Operación-->
+            <input type="button" class="btn btn-operator" value="+">
+            <input type="button" class="btn btn-number" value="9">
+            <input type="button" class="btn btn-number" value="8">
+            <input type="button" class="btn btn-number" value="7">
+            <input type="button" class="btn btn-operator" value="*">
+            <!--Botones Numericos-->
+            <input type="button" class="btn btn-number" value="6">
+            <input type="button" class="btn btn-number" value="5">
+            <input type="button" class="btn btn-number" value="4">
+            <input type="button" class="btn btn-operator" value="/">
+            <input type="button" class="btn btn-number" value="3">
+            <input type="button" class="btn btn-number" value="2">
+            <input type="button" class="btn btn-number" value="1">
+            <input type="button" class="btn btn-operator" value="-">
+            <input type="button" class="btn btn-number" value="0">
+            <input type="button" class="btn-number" value=".">
+            <input type="button" class="btn-operator" value="%">
+
+            <input type="submit"  id="submit" value="=">
+            </div>
+        </form>
+    </div> 
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>
